@@ -49,23 +49,103 @@
 #     print(str(valor))
 
 
-lista_de_lista = []
+# lista_de_lista = []
 
-l = ['Luiza', 'Matheus', 'Laura']
-l2 = ['Janayna','Gustavo','Mariana']
-l3 = ['Diego', 'Marcus', 'Ives']
+# l = ['Luiza', 'Matheus', 'Laura']
+# l2 = ['Janayna','Gustavo','Mariana']
+# l3 = ['Diego', 'Marcus', 'Ives']
 
-lista_de_lista.append(l)
-lista_de_lista.append(l2)
-lista_de_lista.append(l3)
+# lista_de_lista.append(l)
+# lista_de_lista.append(l2)
+# lista_de_lista.append(l3)
 
-print(lista_de_lista)
+# print(lista_de_lista)
 
 
-for indice, valor in enumerate(lista_de_lista):
-    for indice2, valor2 in enumerate(valor):
-        print(str(indice2) + " " + valor2)
+# for indice, valor in enumerate(lista_de_lista):
+#     for indice2, valor2 in enumerate(valor):
+#         print(str(indice2) + " " + valor2)
 
+# 19/07 -----------------------------------------------------------------------------------------------------
+
+# Listas
+lista = ['Soja', 'Eletro', 'Carro']
+
+# Pilhas - Last in first out (LIFO)
+# 'Arroz'
+# lista.insert(0, 'Arroz')
+# print(lista)
+
+# lista.pop(0)
+# lista.pop(0)
+
+# print(lista)
+
+
+
+# Filas - First in first out (FIFO)
+lista2 = ['Diego', 'Mariana', 'Matheus', 'José']
+
+# lista2.append('Laura')
+
+# print(lista2)
+
+# lista2.pop(0)
+
+# print(lista2)
+
+# Tuplas
+# t = ('a', 'b', 'c')
+
+# print('h' in t)
+
+
+# Dicionários
+# dicionario = {'nome': 'Guilherme',
+#                 'idade':'32',
+#                 'cpf':'12345678900'}
+
+# # print(dicionario.values())
+
+# print(dicionario['idade'])
+# print(dicionario.get('idade'))
+
+
+# dicionario['naturalidade'] = 'rio de janeiro'
+
+# dicionario.update({'idade':'33'})
+# print(dicionario)
+
+
+# dicionario = {'cidade': 'São Luis',
+#           'estado': 'MA',
+#             'regiao': 'NE',
+#             'outros': [1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3]}
+
+# print(dicionario)
+
+# for valor in dicionario.get('outros'):
+#     print(valor)
+
+
+dicionario = {'cidade': 'São Luis',
+          'estado': 'MA',
+            'regiao': 'NE',
+            'vizinhos': [{'nome': 'x',
+                        'populacao': 50000,
+                        'limite': 'norte',
+                        'outros': [1, 45, 22, 33]},
+
+                        {'nome': 'y',
+                        'populacao': 100000,
+                        'limite': 'sul',
+                        'outros': [11, 25, 52, 73]}
+                        ]
+            }
+# Imprimir todos os valores da chave outros de todos os vizinhos
+for valor in dicionario.get('vizinhos'):
+    for valor2 in valor.get('outros'):
+        print(valor2)
 
 
 
