@@ -76,23 +76,34 @@ for valor in lista_curriculo:
 
 var = ['python', 'powerbi', 'sql', 'soft']
 
+lista_dict = []
+dicionario1 = {'nome': 'guilherme', 'resumo': concatena_string}
+dicionario2 = {'nome': 'laura', 'resumo': concatena_string}
+
+lista_dict.append(dicionario1)
+lista_dict.append(dicionario2)
 candidatos_match = 0
-count = 0
 
-for i in var:
-    if i in concatena_string:
-        count = count + 1
+for chave, valor in enumerate(lista_dict):
+    
+    count = 0
 
-print(count)
+    concatena_string = valor.get('resumo')
 
-if count > 0:
-    candidatos_match = candidatos_match + 1
+    for i in var:
+        if i in concatena_string:
+            count = count + 1
 
-print(candidatos_match)
+    print(count)
 
-dict1 = {}
+    if count > 0:
+        candidatos_match = candidatos_match + 1
 
-dict1["resumo_candidato_x"] = concatena_string
+    print(candidatos_match)
 
-print(dict1)
+# dict1 = {}
+
+# dict1["resumo_candidato_x"] = concatena_string
+
+# print(dict1)
 
