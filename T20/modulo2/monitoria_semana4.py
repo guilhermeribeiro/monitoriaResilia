@@ -128,24 +128,75 @@ lista2 = ['Diego', 'Mariana', 'Matheus', 'José']
 #     print(valor)
 
 
-dicionario = {'cidade': 'São Luis',
-          'estado': 'MA',
-            'regiao': 'NE',
-            'vizinhos': [{'nome': 'x',
-                        'populacao': 50000,
-                        'limite': 'norte',
-                        'outros': [1, 45, 22, 33]},
+# dicionario = {'cidade': 'São Luis',
+#           'estado': 'MA',
+#             'regiao': 'NE',
+#             'vizinhos': [{'nome': 'x',
+#                         'populacao': 50000,
+#                         'limite': 'norte',
+#                         'outros': [1, 45, 22, 33]},
 
-                        {'nome': 'y',
-                        'populacao': 100000,
-                        'limite': 'sul',
-                        'outros': [11, 25, 52, 73]}
-                        ]
-            }
-# Imprimir todos os valores da chave outros de todos os vizinhos
-for valor in dicionario.get('vizinhos'):
-    for valor2 in valor.get('outros'):
-        print(valor2)
+#                         {'nome': 'y',
+#                         'populacao': 100000,
+#                         'limite': 'sul',
+#                         'outros': [11, 25, 52, 73]}
+#                         ]
+#             }
+# # Imprimir todos os valores da chave outros de todos os vizinhos
+# for valor in dicionario.get('vizinhos'):
+#     for valor2 in valor.get('outros'):
+#         print(valor2)
+
+
+# 20/07 --------------------------------------------------------------------------------------
+
+# idade != 00
+# outras perguntas
+
+# idade = ''
+# condicao = True
+
+# while condicao:
+#   idade = input('Digite a idade: ')
+#   if idade == '00':
+#     condicao = False
+
+#   if condicao == True:
+#     x = input('Primeira pergunta: ')
+#     y = input('Segunda pergunta: ')
+#   else:
+#     print('Idade 00 digitada. Programa encerrado.')
+#   print(' ')
+
+
+
+import pandas as pd
+
+
+# dicionario = {
+#   'x': ['a', 'b'],
+#   'y': ['m', 'f'],
+#   'r1': [1, 2],
+#   'r2': [2, 2],
+#   'r3': [1, 1],
+#   'r4': [2, 2]
+# }
+
+lista = [
+  {'x': 'a', 'y': 'm', 'r1': 1,'r2': 2,'r3': 1,'r4': 1},
+  {'x': 'b', 'y': 'f', 'r1': 2,'r2': 2,'r3': 1,'r4': 2}
+]
+
+
+
+df = pd.DataFrame(lista)
+
+df.to_csv('teste.csv')
+
+print(df.head())
+
+
+
 
 
 
