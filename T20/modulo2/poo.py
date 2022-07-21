@@ -1,6 +1,6 @@
 class Aluno:
     # Atributos
-    _nome = ''
+    __nome = ''
     idade = 0
     sexo = ''
     cpf = 0
@@ -9,7 +9,7 @@ class Aluno:
     n3 = 0
 
     def __init__(self, nome, idade, sexo, cpf, n1, n2, n3):
-        self._nome = nome
+        self.__nome = nome
         self.idade = idade
         self.sexo = sexo
         self.cpf = cpf
@@ -18,17 +18,17 @@ class Aluno:
         self.n3 = n3
 
     def getTodosDados(self):
-        print(self._nome)
+        print(self.__nome)
         print(self.idade)
         print(self.sexo)
         print(self.cpf)
 
     def getNomeIdade(self):
-        print(self._nome + str(self.idade))
+        print(self.__nome + str(self.idade))
     
     def getNome(self):
-        return self.nome
+        return self.__nome
     
     def setNome(self, nome):
-        self.nome = nome
-        return self.nome
+        self.__nome = nome
+        return self.__nome
