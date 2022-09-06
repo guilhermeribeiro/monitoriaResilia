@@ -173,42 +173,39 @@ lista2 = ['Diego', 'Mariana', 'Matheus', 'José']
 import pandas as pd
 
 
-# dicionario = {
-#   'x': ['a', 'b'],
-#   'y': ['m', 'f'],
-#   'r1': [1, 2],
-#   'r2': [2, 2],
-#   'r3': [1, 1],
-#   'r4': [2, 2]
-# }
+dicionario = {
+  'x': ['a', 'b'],
+  'y': ['m', 'f'],
+  'r1': [1, 2],
+  'r2': [2, 2],
+  'r3': [1, 1],
+  'r4': [2, 2]
+}
 
-# lista = [
-#   {'x': 'a', 'y': 'm', 'r1': 1,'r2': 2,'r3': 1,'r4': 1},
-#   {'x': 'b', 'y': 'f', 'r1': 2,'r2': 2,'r3': 1,'r4': 2}
-# ]
-
-
-
-# df = pd.DataFrame(lista)
-
-# df.to_csv('teste.csv')
-
-# print(df.head())
-
-
-class Pai(object):
-  def __init__(self):
-    print('Classe pai foi montada')
-
-
-class Filha(Pai):
-  def __init__(self):
-    super().__init__()
-
-
-f = Filha()
+lista = [
+  {'x': 'a', 'y': 'm', 'r1': 1,'r2': 2,'r3': 1,'r4': 1},
+  {'x': 'b', 'y': 'f', 'r1': 2,'r2': 2,'r3': 1,'r4': 2}
+]
 
 
 
+df = pd.DataFrame(lista)
+
+df.to_csv('teste.csv')
+
+print(df.head())
+
+
+# class Pai(object):
+#   def __init__(self):
+#     print('Classe pai foi montada')
+
+
+# class Filha(Pai):
+#   def __init__(self):
+#     super().__init__()
+
+
+# f = Filha()
 
 
